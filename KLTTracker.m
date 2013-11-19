@@ -96,7 +96,7 @@ while ~isDone(videoFileReader1) && ~isDone(videoFileReader2)
 
       extraction_height = vid2_y2 - vid2_y1;
       frame1_height = vid1_y2 - vid1_y1;
-      scale = (frame1_height+(2*offset)) / (extraction_height + (2*offset));
+      scale = (frame1_height+(2*offset)) / (extraction_height);
       extraction = imresize(extraction, scale);
 
       
