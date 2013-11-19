@@ -48,6 +48,7 @@ initialize(tracker2, points2.Location, objectFrame2);
 %% Track the Object
 %while ~isDone(videoFileReader)
 while ~isDone(videoFileReader1) && ~isDone(videoFileReader2)
+%for x = 1:1
       frame1 = step(videoFileReader1);
       frame1 = imresize(frame1,.4);
       [points1, validity1] = step(tracker1, frame1);
