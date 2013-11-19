@@ -18,7 +18,6 @@ im1(:,:,1) = imR;
 im1(:,:,2) = imG;
 im1(:,:,3) = imB;
 im = im1;
-figure;
-imshow(im);
+
 
 end
