@@ -84,6 +84,7 @@ while ~isDone(videoFileReader1) && ~isDone(videoFileReader2)
       mask(vid1_y1:vid1_y2, vid1_mid:vid1_mid+objXSize) = 0;
       
       blended_im = BlendImages(im2double(frame1), im2double(temp_im), mask);
+      blended_im(blended_im > 1) = 1;
       writeVideo(videoOutput, blended_im);
       
 end
